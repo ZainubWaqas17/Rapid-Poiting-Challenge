@@ -47,7 +47,7 @@ class YourCtrl:
         self.kd = 10.0
 
         # null-space damping
-        self.k_damp_joint = 2.0 # global joint damping (N·m·s/rad)
+        self.k_damp_joint = 2.0 # global joint damping (Nms/rad)
         self.k_posture = 30.0 # pull toward home in null space
         self.d_posture = 2.0
         self.q_home = d.qpos[:self.nv].copy() # nominal posture (start pose)
